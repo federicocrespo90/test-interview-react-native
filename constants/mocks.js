@@ -1,93 +1,56 @@
 const categories = [
   {
-    id: 'plants',
-    name: 'Plants',
-    tags: ['products', 'inspirations'],
-    count: 147,
-    image: require('../assets/icons/plants.png')
+    id: 'a',
+    slug: 'CATEGORY A',
+    imageNormal: require('../assets/icons/a-normal.png'),
+    imageSelected: require('../assets/icons/a-selected.png'),
+    imageNormalSmall: require('../assets/icons/a-normal-small.png'),
+    imageSelectedSmall: require('../assets/icons/a-selected-small.png'),
   },
   {
-    id: 'seeds',
-    name: 'Seeds',
-    tags: ['products', 'shop'],
-    count: 16,
-    image: require('../assets/icons/seeds.png')
+    id: 'b',
+    slug: 'CATEGORY B',
+    imageNormal: require('../assets/icons/b-normal.png'),
+    imageSelected: require('../assets/icons/b-selected.png'),
+    imageNormalSmall: require('../assets/icons/b-normal-small.png'),
+    imageSelectedSmall: require('../assets/icons/b-selected-small.png'),
   },
   {
-    id: 'flowers',
-    name: 'Flowers',
-    tags: ['products', 'inspirations'],
-    count: 68,
-    image: require('../assets/icons/flowers.png')
+    id: 'c',
+    slug: 'CATEGORY C',
+    imageNormal: require('../assets/icons/c-normal.png'),
+    imageSelected: require('../assets/icons/c-selected.png'),
+    imageNormalSmall: require('../assets/icons/c-normal-small.png'),
+    imageSelectedSmall: require('../assets/icons/c-selected-small.png'),
   },
   {
-    id: 'sprayers',
-    name: 'Sprayers',
-    tags: ['products', 'shop'],
-    count: 17,
-    image: require('../assets/icons/sprayers.png')
-  },
-  {
-    id: 'pots',
-    name: 'Pots',
-    tags: ['products', 'shop'],
-    count: 47,
-    image: require('../assets/icons/pots.png')
-  },
-  {
-    id: 'fertilizers',
-    name: 'fertilizers',
-    tags: ['products', 'shop'],
-    count: 47,
-    image: require('../assets/icons/fertilizers.png')
-  },
-];
-
-const products = [
-  {
-    id: 1, 
-    name: '16 Best Plants That Thrive In Your Bedroom',
-    description: 'Bedrooms deserve to be decorated with lush greenery just like every other room in the house – but it can be tricky to find a plant that thrives here. Low light, high humidity and warm temperatures mean only certain houseplants will flourish.',
-    tags: ['Interior', '27 m²', 'Ideas'],
-    images: [
-      require('../assets/images/plants_1.png'),
-      require('../assets/images/plants_2.png'),
-      require('../assets/images/plants_3.png'),
-      // showing only 3 images, show +6 for the rest
-      require('../assets/images/plants_1.png'),
-      require('../assets/images/plants_2.png'),
-      require('../assets/images/plants_3.png'),
-      require('../assets/images/plants_1.png'),
-      require('../assets/images/plants_2.png'),
-      require('../assets/images/plants_3.png'),
-    ]
+    id: 'all',
+    slug: 'ALL',
+    imageNormal: require('../assets/icons/a-normal.png'),
+    imageSelected: require('../assets/icons/a-selected.png'),
+    imageNormalSmall: require('../assets/icons/a-normal-small.png'),
+    imageSelectedSmall: require('../assets/icons/a-selected-small.png'),
   }
 ];
 
-const explore = [
-  // images
-  require('../assets/images/explore_1.png'),
-  require('../assets/images/explore_2.png'),
-  require('../assets/images/explore_3.png'),
-  require('../assets/images/explore_4.png'),
-  require('../assets/images/explore_5.png'),
-  require('../assets/images/explore_6.png'),
+const filters = [
+  { id: 'all', slug: 'ALL' },
+  { id: 'filter1', slug: 'FILTER1' },
+  { id: 'filter2', slug: 'FILTER2' },
+  { id: 'filter3', slug: 'FILTER3' },
+  { id: 'filter4', slug: 'FILTER4' },
 ];
 
-const profile = {
-  username: 'react-ui-kit',
-  location: 'Europe',
-  email: 'contact@react-ui-kit.com',
-  avatar: require('../assets/images/avatar.png'),
-  budget: 1000,
-  monthly_cap: 5000,
-  notifications: true,
-  newsletter: false,
-};
+const recentValues = [
+  { id:'1', category: 'a', title: 'Value 1', value: ' 001', active: false, filter: 'filter1' },
+  { id:'2', category: 'b', title: 'Value 2', value: '002', active: false, filter: 'filter2' },
+  { id:'3', category: 'c', title: 'Value 3', value: '003', active: false, filter: 'filter2' },
+  { id:'4', category: 'a', title: 'Value 4', value: '004', active: false, filter: 'filter3' },
+  { id:'5', category: 'b', title: 'Value 5', value: '005', active: false, filter: 'filter4' },
+];
 
 export {
   categories,
-  explore,
-  products,
-  profile,
-}
+  filters,
+  recentValues
+};

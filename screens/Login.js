@@ -11,8 +11,8 @@ import { Button, Block, Input, Text } from '../components';
 import { theme } from '../constants';
 import Logo from '../assets/logo.png';
 
-const VALID_EMAIL = "contact@react-ui-kit.com";
-const VALID_PASSWORD = "subscribe";
+const VALID_EMAIL = "nikolaturbo@filadelfia.com";
+const VALID_PASSWORD = "usseldrige";
 
 export default class Login extends Component {
   state = {
@@ -54,7 +54,7 @@ export default class Login extends Component {
       <KeyboardAvoidingView style={styles.login} behavior="padding">
         <Block padding={[0, theme.sizes.base * 2]}>
           <Image
-              style={{ marginLeft: '27%', marginTop: '27%' }}
+              style={{ marginLeft: '27%', marginTop: '18%' }}
               source={Logo}
           />
           <Block middle>
@@ -92,7 +92,7 @@ export default class Login extends Component {
                 Don't have an account?
                 <Text blue caption center style={{textDecorationLine: 'none', fontSize: 16 }}>
                   {' '} Sign Up
-                </Text>?
+                </Text>
               </Text>
             </Button>
           </Block>

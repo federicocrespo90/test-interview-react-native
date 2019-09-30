@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "plant-app",
-    "slug": "plant-app",
+    "name": "backlayer-test",
+    "slug": "backlayer-test",
     "privacy": "public",
     "sdkVersion": "33.0.0",
     "platforms": [

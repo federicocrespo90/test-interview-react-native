@@ -7,6 +7,8 @@ const colors = {
   white: "#FFFFFF",
   gray: "#9DA3B4",
   gray2: "#C5CCD6",
+  grayIntense: "#898989",
+  grayLight: "#F2F2F2",
   blue: "#31C5C3"
 };
 
@@ -26,6 +28,9 @@ const sizes = {
   body: 14,
   caption: 12,
 };
+const font = {
+  family: "Gotham Rounded"
+}
 
 const fonts = {
   h1: {
@@ -51,4 +56,4 @@ const fonts = {
   },
 };
 
-export { colors, sizes, fonts };
+export { colors, sizes, fonts, font };
